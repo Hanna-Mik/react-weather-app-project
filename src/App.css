@@ -1,1 +1,9 @@
-
+body {
+  font-family: Google Sans, arial, sans-serif;
+  margin: 50px auto;
+  max-width: 600px;
+}
+.App footer {
+  font-size: 14px;
+  color: #70757a;
+}

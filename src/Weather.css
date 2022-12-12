@@ -1,6 +1,47 @@
 .Weather {
   border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 15px;
 }
 .Weather ul {
   list-style: none;
+}
+.Weather img {
+  display: inline-block;
+  height: 64px;
+  vertical-align: top;
+  width: 64px;
+}
+.Weather .placeInfo {
+  color: #70757a;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+}
+.Weather .placeInfo h1 {
+  color: #202124;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.Weather .currentWeatherDetails {
+  color: #70757a;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 0;
+}
+.Weather .temperature {
+  font-weight: 400;
+  color: #202124;
+  font-size: 48px;
+}
+.Weather .unit {
+  font-weight: normal;
+  color: #202124;
+  font-size: 16px;
+  line-height: 1;
+  position: relative;
+  top: -24px;
 }

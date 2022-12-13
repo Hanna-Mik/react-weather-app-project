@@ -9,9 +9,9 @@
 }
 .Weather img {
   display: inline-block;
-  height: 64px;
+  height: 76px;
   vertical-align: top;
-  width: 64px;
+  width: 76px;
 }
 .Weather .placeInfo {
   color: #70757a;

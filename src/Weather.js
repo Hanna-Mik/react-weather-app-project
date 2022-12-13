@@ -8,14 +8,15 @@ export default function Weather(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
-      temperature: response.data.main.temp,
-      city: response.data.name,
-      description: response.data.weather[0].description,
+      temperature: response.data.temperature.current,
+      city: response.data.city,
+      description: response.data.condition.description,
       wind: response.data.wind.speed,
-      pressure: response.data.main.pressure,
-      humidity: response.data.main.humidity,
+      pressure: response.data.temperature.pressure,
+      humidity: response.data.temperature.humidity,
       date: "Monday 09:00",
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      iconUrl: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
     });
   }
 
@@ -43,7 +44,7 @@ export default function Weather(props) {
         </form>
         <div className="row mt-4">
           <div className="col-4 text-end">
-            <img src={weatherData.iconUrl} alt={weatherData.description} />{" "}
+            <img src={weatherData.iconUrl} alt={weatherData.icon} />{" "}
             <span className="temperature">
               {Math.round(weatherData.temperature)}
             </span>
@@ -69,8 +70,8 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    let apiKey = "738993d32099f81cb584e637be73ea30";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
+    let apiKey = "b7otd3ffec1d40c723a936cbb2dda9f5";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return (
       <div className="Weather">

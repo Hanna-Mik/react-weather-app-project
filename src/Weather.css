@@ -7,11 +7,8 @@
 .Weather ul {
   list-style: none;
 }
-.Weather img {
-  display: inline-block;
-  height: 76px;
-  vertical-align: top;
-  width: 76px;
+.Weather canvas {
+  padding-right: 10px;
 }
 .Weather .placeInfo {
   color: #70757a;

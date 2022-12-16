@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import LoaderSpinner from "./LoaderSpinner";
 import axios from "axios";
 import "./Weather.css";
 
@@ -7,7 +8,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
@@ -61,10 +61,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return (
-      <div className="Weather">
-        <div>The data is loading..</div>
-      </div>
-    );
+    return <LoaderSpinner />;
   }
 }

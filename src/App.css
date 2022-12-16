@@ -2,6 +2,15 @@ body {
   font-family: Google Sans, arial, sans-serif;
   margin: 50px auto;
   max-width: 600px;
+  background-image: linear-gradient(
+    to right,
+    #e4afcb 0%,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #e2c58b 30%,
+    #c2ce9c 64%,
+    #7edbdc 100%
+  );
 }
 .App footer {
   font-size: 14px;

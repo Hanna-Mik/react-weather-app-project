@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
           <ul className="currentWeatherDetails">
             <li>Pressure: {props.data.pressure}hPa</li>
             <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {Math.round(props.data.wind)} m/s</li>
+            <li>Wind: {Math.round(props.data.wind * 10) / 10} m/s</li>
           </ul>
         </div>
         <div className="col-4 placeInfo">

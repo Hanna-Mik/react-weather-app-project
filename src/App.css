@@ -1,7 +1,17 @@
 body {
   font-family: Google Sans, arial, sans-serif;
   max-width: 600px;
-  margin: 100px auto 10px;
+  margin: 100px auto 0px;
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+  background-size: cover;
 }
 .App header {
   text-align: center;

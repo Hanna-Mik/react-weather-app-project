@@ -36,6 +36,9 @@ body {
   body {
     margin-top: 20px;
   }
+  .App header {
+    font-size: 2rem;
+  }
   .App footer {
     margin-top: 40px;
     text-align: center;

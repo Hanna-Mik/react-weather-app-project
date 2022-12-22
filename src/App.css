@@ -31,3 +31,8 @@ body {
   top: -126px;
   left: -323px;
 }
+@media (max-width: 992px) {
+  .App footer {
+    margin-top: 40px;
+  }
+}

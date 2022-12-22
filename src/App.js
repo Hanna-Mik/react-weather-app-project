@@ -9,7 +9,7 @@ function App() {
       <div className="container">
         <header>Weather App</header>
         <Weather defaultCity="New York" />{" "}
-        <img src={logo} alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo d-none d-lg-block" />
         <footer>
           This App was created by Hanna Shchepeleva and is{" "}
           <a

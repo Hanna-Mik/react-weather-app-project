@@ -33,6 +33,9 @@ body {
   left: -323px;
 }
 @media (max-width: 992px) {
+  body {
+    margin-top: 20px;
+  }
   .App footer {
     margin-top: 40px;
     text-align: center;

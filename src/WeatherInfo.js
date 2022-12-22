@@ -6,19 +6,19 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <div className="row mt-5 d-none d-md-block">
-        <div className="col-4 text-end">
+      <div className="row mt-5">
+        <div className="col-4 text-end d-none d-md-block">
           <WeatherIcon code={props.data.icon} size={52} />
           <WeatherTemperature celsius={props.data.temperature} />
         </div>
-        <div className="col-4">
+        <div className="col-4 d-none d-md-block">
           <ul className="currentWeatherDetails">
             <li>Pressure: {props.data.pressure}hPa</li>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {Math.round(props.data.wind * 10) / 10} m/s</li>
           </ul>
         </div>
-        <div className="col-4 placeInfo">
+        <div className="col-4 d-none d-md-block placeInfo">
           <ul>
             <li>
               <h1>{props.data.city}</h1>
@@ -30,7 +30,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <div className="row mt-5 d-block d-md-none">
+      <div className="row mt-5 d-md-none">
         <div className="col-12 text-center placeInfo">
           <ul>
             <li>

@@ -11,7 +11,14 @@ export default function LoaderSpinner() {
         ariaLabel="blocks-loading"
         wrapperStyle={{}}
         wrapperClass="blocks-wrapper"
-        colors={["#b8c480", "#B2A3B5", "#F4442E", "#51E5FF", "#429EA6"]}
+        colors={[
+          "##CCCCCC",
+          "#FFF963",
+          "#FFFFFF",
+          "##CCCCCC",
+          "#FFF963",
+          "#FFFFFF",
+        ]}
       />
     </div>
   );

@@ -17,6 +17,7 @@
   color: #202124;
   font-size: 18px;
   font-weight: 400;
+  transition: all 150ms ease-in-out;
 }
 .Weather .btn:hover {
   background: #f2ed5d;

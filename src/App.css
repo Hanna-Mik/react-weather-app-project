@@ -1,18 +1,21 @@
 body {
   font-family: Google Sans, arial, sans-serif;
-  margin: 50px auto;
   max-width: 600px;
-  background-image: linear-gradient(
-    to right,
-    #e4afcb 0%,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #e2c58b 30%,
-    #c2ce9c 64%,
-    #7edbdc 100%
-  );
+  margin: 100px auto 10px;
+}
+.App header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 3rem;
 }
 .App footer {
   font-size: 14px;
   color: #70757a;
+  margin-top: 100px;
+}
+.logo {
+  max-width: 380px;
+  position: relative;
+  top: -40px;
+  left: -210px;
 }
